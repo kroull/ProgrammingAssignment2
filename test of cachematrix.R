@@ -1,15 +1,15 @@
-## Put comments here that give an overall description of what your
-## functions do
+# Standard R
+mat <- matrix(c(2,0,0,2), nrow = 2, ncol = 2)
+mat
+matInv <- solve(mat)
+matInv
 
-## Write a short comment describing this function
+# Cached
+matrix <- makeCacheMatrix(mat)
+matrix$get()
 
-makeCacheMatrix <- function(x = matrix()) {
+matrixInv  <- cacheSolve(matrix)
+matrixInv
 
-}
-
-
-## Write a short comment describing this function
-
-cacheSolve <- function(x, ...) {
-        ## Return a matrix that is the inverse of 'x'
-}
+matrixInv  <- cacheSolve(matrix)
+matrixInv
