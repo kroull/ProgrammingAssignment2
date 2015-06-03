@@ -4,7 +4,7 @@
 # to caching the inverse of a matrix rather than compute it repeatedly. This
 # file contains a pair of functions that cache the inverse of a matrix.
 #
-# See the file test of cachematrix.R for an example of usage.
+# See the file "test of cachematrix.R" for an example of usage.
 
 makeCacheMatrix <- function(x = matrix()) {
   # This function creates a special "matrix" object that can cache its inverse.
